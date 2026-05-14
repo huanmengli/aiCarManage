@@ -1,9 +1,57 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/login",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/map/index",
+			"style": {
+				"navigationBarTitleText": "导航"
+			}
+		},
+		{
+			"path": "pages/notice/index",
+			"style": {
+				"navigationBarTitleText": "通知"
+			}
+		},
+		{
+			"path": "pages/owner/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/owner/ownerAndCar",
+			"style": {
+				"navigationBarTitleText": "车辆管理"
+			}
+		},
+		{
+			"path": "pages/owner/ownerAndPickup",
+			"style": {
+				"navigationBarTitleText": "接送人管理"
+			}
+		},
+		{
+			"path": "pages/owner/ownerSetting",
+			"style": {
+				"navigationBarTitleText": "账号中心"
 			}
 		}
 	],
