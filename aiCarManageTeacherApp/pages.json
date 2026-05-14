@@ -1,9 +1,75 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/login",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/home/homeAndNotice",
+			"style": {
+				"navigationBarTitleText": "通知动态"
+			}
+		},
+		{
+			"path": "pages/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/dataStats/index",
+			"style": {
+				"navigationBarTitleText": "数据统计"
+			}
+		},
+		{
+			"path": "pages/notice/index",
+			"style": {
+				"navigationBarTitleText": "通知详情"
+			}
+		},
+		{
+			"path": "pages/owner/index",
+			"style": {
+				"navigationBarTitleText": "教师中心"
+			}
+		},
+		{
+			"path": "pages/owner/classAndStudent",
+			"style": {
+				"navigationBarTitleText": "班级详情"
+			}
+		},
+		{
+			"path": "pages/owner/ownerAndCar",
+			"style": {
+				"navigationBarTitleText": "车辆管理"
+			}
+		},
+		{
+			"path": "pages/owner/ownerAndClass",
+			"style": {
+				"navigationBarTitleText": "班级管理"
+			}
+		},
+		{
+			"path": "pages/owner/ownerAndNotice",
+			"style": {
+				"navigationBarTitleText": "通知管理"
+			}
+		},
+		{
+			"path": "pages/owner/studentAndPick",
+			"style": {
+				"navigationBarTitleText": "学生接送人"
 			}
 		}
 	],

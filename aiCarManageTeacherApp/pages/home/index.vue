@@ -1,3 +1,4 @@
+<!-- 首页数据查看页面 -->
 <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
