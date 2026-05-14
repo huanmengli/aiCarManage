@@ -1,0 +1,210 @@
+
+page {
+  background-color: #f5f7fa;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 顶部导航栏 */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 32rpx;
+  background: #fff;
+}
+.nav-back {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-back .icon {
+  font-size: 36rpx;
+  color: #1f2937;
+}
+.nav-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.nav-placeholder {
+  width: 60rpx;
+}
+
+/* 统计卡片 */
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32rpx;
+  margin: 24rpx 32rpx 0;
+  background: #fff;
+  border-radius: 24rpx;
+}
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+.stats-count {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.stats-detail {
+  font-size: 24rpx;
+  color: #9ca3af;
+}
+.stats-icon {
+  width: 80rpx;
+  height: 80rpx;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats-icon .icon-bell {
+  font-size: 40rpx;
+}
+
+/* 筛选标签 */
+.filter-tabs {
+  display: flex;
+  gap: 16rpx;
+  padding: 24rpx 32rpx;
+}
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  padding: 16rpx 32rpx;
+  background: #fff;
+  border-radius: 32rpx;
+  font-size: 26rpx;
+  color: #6b7280;
+  border: 2rpx solid transparent;
+  transition: all 0.3s;
+}
+.tab-item.active {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+.tab-badge {
+  font-size: 22rpx;
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 2rpx 12rpx;
+  border-radius: 12rpx;
+}
+.tab-item.active .tab-badge {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* 家长通知列表 */
+.notice-list {
+  flex: 1;
+  padding: 0 32rpx;
+  overflow-y: auto;
+}
+.notice-card {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 28rpx 32rpx;
+  margin-bottom: 20rpx;
+}
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background: #f3f4f6;
+  flex-shrink: 0;
+}
+.notice-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+.student-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.class-name {
+  font-size: 22rpx;
+  color: #9ca3af;
+  background: #f3f4f6;
+  padding: 4rpx 16rpx;
+  border-radius: 12rpx;
+}
+.parent-row {
+  display: flex;
+  align-items: center;
+}
+.parent-label {
+  font-size: 24rpx;
+  color: #9ca3af;
+}
+.parent-name {
+  font-size: 24rpx;
+  color: #6b7280;
+}
+.status-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8rpx;
+}
+.status-tag {
+  font-size: 24rpx;
+  font-weight: 600;
+  padding: 6rpx 20rpx;
+  border-radius: 12rpx;
+}
+.status-tag.received {
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+.status-tag.unreceived {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+}
+.notice-time {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+
+/* 空状态 */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 0;
+  gap: 24rpx;
+}
+.empty-icon {
+  font-size: 80rpx;
+}
+.empty-text {
+  font-size: 28rpx;
+  color: #9ca3af;
+}
+
