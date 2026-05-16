@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/owner/ownerAndPickup",
+    "pages/owner/ownAndRecord",
+    "pages/login",
+    "pages/register",
+    "pages/map/index",
+    "pages/notice/index",
+    "pages/owner/index",
+    "pages/owner/ownerAndCar",
+    "pages/owner/ownerSetting"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home1.png",
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/wenjian.png",
+        "selectedIconPath": "static/wenjian1.png",
+        "pagePath": "pages/notice/index",
+        "text": "通知"
+      },
+      {
+        "iconPath": "static/map.png",
+        "selectedIconPath": "static/mapSelect.png",
+        "pagePath": "pages/map/index",
+        "text": "导航"
+      },
+      {
+        "iconPath": "static/owner.png",
+        "selectedIconPath": "static/owner1.png",
+        "pagePath": "pages/owner/index",
+        "text": "个人"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

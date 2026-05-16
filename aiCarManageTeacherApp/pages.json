@@ -1,5 +1,11 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/owner/studentAndPick",
+			"style": {
+				"navigationBarTitleText": "学生接送人"
+			}
+		},
 		{
 			"path": "pages/home/index",
 			"style": {
@@ -66,13 +72,8 @@
 			"style": {
 				"navigationBarTitleText": "通知管理"
 			}
-		},
-		{
-			"path": "pages/owner/studentAndPick",
-			"style": {
-				"navigationBarTitleText": "学生接送人"
-			}
 		}
+		
 	],
 	"tabBar": {
 		"list": [

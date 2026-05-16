@@ -7,6 +7,19 @@
 			}
 		},
 		{
+			"path": "pages/owner/ownerAndPickup",
+			"style": {
+				"navigationBarTitleText": "接送人管理"
+			}
+		},
+		{
+			"path": "pages/owner/ownAndRecord",
+			"style": {
+				"navigationBarTitleText": "接送记录"
+			}
+		},
+
+		{
 			"path": "pages/login",
 			"style": {
 				"navigationBarTitleText": "登录"
@@ -43,12 +56,8 @@
 				"navigationBarTitleText": "车辆管理"
 			}
 		},
-		{
-			"path": "pages/owner/ownerAndPickup",
-			"style": {
-				"navigationBarTitleText": "接送人管理"
-			}
-		},
+
+
 		{
 			"path": "pages/owner/ownerSetting",
 			"style": {
