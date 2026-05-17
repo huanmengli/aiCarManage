@@ -130,7 +130,7 @@
 
 	.page {
 		min-height: 100vh;
-		padding: 28rpx;
+		padding: 3.733vw;
 		box-sizing: border-box;
 		color: #1f2937;
 	}
@@ -139,15 +139,15 @@
 	.notice-card,
 	.pickup-card {
 		background: #ffffff;
-		border-radius: 18rpx;
-		box-shadow: 0 14rpx 38rpx rgba(31, 41, 55, 0.07);
+		border-radius: 2.4vw;
+		box-shadow: 0 1.867vw 5.067vw rgba(31, 41, 55, 0.07);
 	}
 
 	.student-panel {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 30rpx 28rpx;
+		padding: 4vw 3.733vw;
 	}
 
 	.student-left {
@@ -157,42 +157,42 @@
 	}
 
 	.avatar {
-		width: 90rpx;
-		height: 90rpx;
+		width: 12vw;
+		height: 12vw;
 		border-radius: 50%;
 		background: #2563eb;
 		color: #ffffff;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 38rpx;
+		font-size: 5.067vw;
 		font-weight: 800;
 		flex-shrink: 0;
 	}
 
 	.student-text {
-		margin-left: 18rpx;
+		margin-left: 2.4vw;
 		min-width: 0;
 	}
 
 	.student-name {
 		display: block;
-		font-size: 38rpx;
+		font-size: 5.067vw;
 		font-weight: 800;
 		color: #111827;
 	}
 
 	.student-desc {
 		display: block;
-		margin-top: 8rpx;
-		font-size: 25rpx;
+		margin-top: 1.067vw;
+		font-size: 3.333vw;
 		color: #6b7280;
 	}
 
 	.count-box {
-		width: 120rpx;
-		height: 120rpx;
-		border-radius: 16rpx;
+		width: 16vw;
+		height: 16vw;
+		border-radius: 2.133vw;
 		background: #ecfdf5;
 		color: #047857;
 		display: flex;
@@ -203,38 +203,38 @@
 	}
 
 	.count-num {
-		font-size: 38rpx;
+		font-size: 5.067vw;
 		font-weight: 800;
 	}
 
 	.count-label {
-		margin-top: 4rpx;
-		font-size: 22rpx;
+		margin-top: 0.533vw;
+		font-size: 2.933vw;
 	}
 
 	.notice-card {
-		margin-top: 22rpx;
-		padding: 24rpx 28rpx;
-		border-left: 8rpx solid #2563eb;
+		margin-top: 2.933vw;
+		padding: 3.2vw 3.733vw;
+		border-left: 1.067vw solid #2563eb;
 	}
 
 	.notice-title {
 		display: block;
-		font-size: 30rpx;
+		font-size: 4vw;
 		font-weight: 700;
 	}
 
 	.notice-desc {
 		display: block;
-		margin-top: 10rpx;
-		font-size: 25rpx;
+		margin-top: 1.333vw;
+		font-size: 3.333vw;
 		line-height: 1.6;
 		color: #6b7280;
 	}
 
 	.pickup-card {
-		margin-top: 22rpx;
-		padding: 28rpx;
+		margin-top: 2.933vw;
+		padding: 3.733vw;
 	}
 
 	.card-head,
@@ -251,17 +251,17 @@
 	}
 
 	.person-name {
-		font-size: 33rpx;
+		font-size: 4.4vw;
 		font-weight: 800;
 		color: #111827;
 	}
 
 	.relation,
 	.default-tag {
-		margin-left: 12rpx;
-		padding: 6rpx 12rpx;
-		border-radius: 999rpx;
-		font-size: 22rpx;
+		margin-left: 1.6vw;
+		padding: 0.8vw 1.6vw;
+		border-radius: 133.2vw;
+		font-size: 2.933vw;
 	}
 
 	.relation {
@@ -275,7 +275,7 @@
 	}
 
 	.state {
-		font-size: 24rpx;
+		font-size: 3.2vw;
 		color: #047857;
 	}
 
@@ -284,43 +284,43 @@
 	}
 
 	.detail-grid {
-		margin-top: 22rpx;
-		padding: 14rpx 0;
-		border-top: 1rpx solid #eef2f7;
-		border-bottom: 1rpx solid #eef2f7;
+		margin-top: 2.933vw;
+		padding: 1.867vw 0;
+		border-top: 0.133vw solid #eef2f7;
+		border-bottom: 0.133vw solid #eef2f7;
 	}
 
 	.detail-row {
-		min-height: 58rpx;
+		min-height: 7.733vw;
 	}
 
 	.detail-label {
-		font-size: 25rpx;
+		font-size: 3.333vw;
 		color: #6b7280;
 	}
 
 	.detail-value {
-		max-width: 430rpx;
+		max-width: 57.333vw;
 		text-align: right;
-		font-size: 26rpx;
+		font-size: 3.467vw;
 		color: #111827;
 	}
 
 	.action-row {
 		justify-content: flex-end;
-		gap: 16rpx;
-		margin-top: 22rpx;
+		gap: 2.133vw;
+		margin-top: 2.933vw;
 	}
 
 	.action-btn {
-		width: 150rpx;
-		height: 62rpx;
-		line-height: 62rpx;
+		width: 20vw;
+		height: 8.267vw;
+		line-height: 8.267vw;
 		margin: 0;
-		border-radius: 12rpx;
+		border-radius: 1.6vw;
 		background: #2563eb;
 		color: #ffffff;
-		font-size: 25rpx;
+		font-size: 3.333vw;
 	}
 
 	.action-btn.ghost {
@@ -329,21 +329,21 @@
 	}
 
 	.empty {
-		margin-top: 120rpx;
+		margin-top: 16vw;
 		text-align: center;
 		color: #6b7280;
 	}
 
 	.empty-title {
 		display: block;
-		font-size: 32rpx;
+		font-size: 4.267vw;
 		font-weight: 700;
 		color: #374151;
 	}
 
 	.empty-desc {
 		display: block;
-		margin-top: 14rpx;
-		font-size: 25rpx;
+		margin-top: 1.867vw;
+		font-size: 3.333vw;
 	}
 </style>

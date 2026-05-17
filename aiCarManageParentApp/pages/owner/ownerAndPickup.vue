@@ -224,7 +224,7 @@
 
 	.page {
 		min-height: 100vh;
-		padding: 28rpx;
+		padding: 3.733vw;
 		box-sizing: border-box;
 		color: #1f2937;
 	}
@@ -233,79 +233,79 @@
 	.student-card,
 	.pickup-card {
 		background: #ffffff;
-		border-radius: 18rpx;
-		box-shadow: 0 14rpx 38rpx rgba(31, 41, 55, 0.07);
+		border-radius: 2.4vw;
+		box-shadow: 0 1.867vw 5.067vw rgba(31, 41, 55, 0.07);
 	}
 
 	.top-card {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 30rpx 28rpx;
+		padding: 4vw 3.733vw;
 	}
 
 	.page-title {
 		display: block;
-		font-size: 40rpx;
+		font-size: 5.333vw;
 		font-weight: 800;
 		color: #111827;
 	}
 
 	.page-desc {
 		display: block;
-		margin-top: 10rpx;
-		font-size: 25rpx;
+		margin-top: 1.333vw;
+		font-size: 3.333vw;
 		color: #6b7280;
 	}
 
 	.add-btn {
-		width: 132rpx;
-		height: 68rpx;
-		line-height: 68rpx;
+		width: 17.6vw;
+		height: 9.067vw;
+		line-height: 9.067vw;
 		margin: 0;
-		border-radius: 12rpx;
+		border-radius: 1.6vw;
 		background: #2563eb;
 		color: #ffffff;
-		font-size: 27rpx;
+		font-size: 3.6vw;
 	}
 
 	.student-card {
 		display: flex;
 		align-items: center;
-		margin-top: 22rpx;
-		padding: 24rpx 28rpx;
+		margin-top: 2.933vw;
+		padding: 3.2vw 3.733vw;
 	}
 
 	.student-avatar {
-		width: 78rpx;
-		height: 78rpx;
+		width: 10.4vw;
+		height: 10.4vw;
 		border-radius: 50%;
 		background: #0f766e;
 		color: #ffffff;
-		font-size: 34rpx;
+		font-size: 4.533vw;
 		font-weight: 700;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-right: 18rpx;
+		margin-right: 2.4vw;
 	}
 
 	.student-name {
 		display: block;
-		font-size: 31rpx;
+		font-size: 4.133vw;
 		font-weight: 700;
 	}
 
 	.student-class {
 		display: block;
-		margin-top: 6rpx;
-		font-size: 24rpx;
+		margin-top: 0.8vw;
+		font-size: 3.2vw;
 		color: #6b7280;
 	}
 
 	.pickup-card {
-		margin-top: 22rpx;
-		padding: 28rpx;
+		margin-top: 2.933vw;
+		padding: 3.733vw;
 	}
 
 	.pickup-head,
@@ -326,17 +326,17 @@
 	}
 
 	.pickup-name {
-		font-size: 33rpx;
+		font-size: 4.4vw;
 		font-weight: 700;
 		color: #111827;
 	}
 
 	.relation,
 	.default-tag {
-		margin-left: 12rpx;
-		padding: 6rpx 12rpx;
-		border-radius: 999rpx;
-		font-size: 22rpx;
+		margin-left: 1.6vw;
+		padding: 0.8vw 1.6vw;
+		border-radius: 133.2vw;
+		font-size: 2.933vw;
 	}
 
 	.relation {
@@ -350,7 +350,7 @@
 	}
 
 	.state {
-		font-size: 24rpx;
+		font-size: 3.2vw;
 		color: #047857;
 	}
 
@@ -359,44 +359,44 @@
 	}
 
 	.pickup-info {
-		margin-top: 20rpx;
-		padding: 16rpx 0;
-		border-top: 1rpx solid #eef2f7;
-		border-bottom: 1rpx solid #eef2f7;
+		margin-top: 2.667vw;
+		padding: 2.133vw 0;
+		border-top: 0.133vw solid #eef2f7;
+		border-bottom: 0.133vw solid #eef2f7;
 	}
 
 	.info-row {
-		min-height: 56rpx;
+		min-height: 7.467vw;
 	}
 
 	.info-label {
 		color: #6b7280;
-		font-size: 25rpx;
+		font-size: 3.333vw;
 	}
 
 	.info-value {
-		max-width: 420rpx;
+		max-width: 56vw;
 		text-align: right;
-		font-size: 26rpx;
+		font-size: 3.467vw;
 		color: #111827;
 	}
 
 	.actions {
 		justify-content: flex-end;
-		gap: 14rpx;
-		margin-top: 22rpx;
+		gap: 1.867vw;
+		margin-top: 2.933vw;
 		flex-wrap: wrap;
 	}
 
 	.text-btn {
-		height: 58rpx;
-		line-height: 58rpx;
+		height: 7.733vw;
+		line-height: 7.733vw;
 		margin: 0;
-		padding: 0 20rpx;
-		border-radius: 10rpx;
+		padding: 0 2.667vw;
+		border-radius: 1.333vw;
 		background: #f3f4f6;
 		color: #374151;
-		font-size: 24rpx;
+		font-size: 3.2vw;
 	}
 
 	.text-btn.danger {
@@ -417,54 +417,54 @@
 	}
 
 	.form-panel {
-		width: 100%;
-		padding: 30rpx 28rpx 48rpx;
+		width: 100vw;
+		padding: 4vw 3.733vw 6.4vw;
 		box-sizing: border-box;
-		border-radius: 28rpx 28rpx 0 0;
+		border-radius: 3.733vw 3.733vw 0 0;
 		background: #ffffff;
 	}
 
 	.form-title {
-		font-size: 34rpx;
+		font-size: 4.533vw;
 		font-weight: 800;
 	}
 
 	.close {
-		font-size: 26rpx;
+		font-size: 3.467vw;
 		color: #2563eb;
 	}
 
 	.field {
-		margin-top: 22rpx;
+		margin-top: 2.933vw;
 	}
 
 	.field-label {
-		font-size: 26rpx;
+		font-size: 3.467vw;
 		color: #4b5563;
 	}
 
 	.field-input {
-		margin-top: 12rpx;
-		height: 78rpx;
-		padding: 0 20rpx;
-		border-radius: 12rpx;
+		margin-top: 1.6vw;
+		height: 10.4vw;
+		padding: 0 2.667vw;
+		border-radius: 1.6vw;
 		background: #f3f4f6;
-		font-size: 28rpx;
+		font-size: 3.733vw;
 	}
 
 	.switch-row {
-		margin-top: 22rpx;
-		min-height: 72rpx;
+		margin-top: 2.933vw;
+		min-height: 9.6vw;
 	}
 
 	.save-btn {
-		margin-top: 26rpx;
-		height: 88rpx;
-		line-height: 88rpx;
-		border-radius: 14rpx;
+		margin-top: 3.467vw;
+		height: 11.733vw;
+		line-height: 11.733vw;
+		border-radius: 1.867vw;
 		background: #2563eb;
 		color: #ffffff;
-		font-size: 30rpx;
+		font-size: 4vw;
 		font-weight: 700;
 	}
 </style>
