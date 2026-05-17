@@ -103,27 +103,27 @@ export default {
   methods: {
     // 去添加车辆
     goAddCar() {
-      uni.navigateTo({ url: "/pages/car/add" });
+      uni.navigateTo({ url: "/pages/" });
     },
     // 车辆详情
     goCarDetail() {
-      uni.navigateTo({ url: "/pages/car/detail" });
+      uni.navigateTo({ url: "/pages/owner/ownerAndCar" });
     },
     // 去添加接送人
     goAddReceiver() {
-      uni.navigateTo({ url: "/pages/receiver/add" });
+      uni.navigateTo({ url: "/pages/" });
     },
     // 接送人详情
     goReceiverDetail() {
-      uni.navigateTo({ url: "/pages/receiver/detail" });
+      uni.navigateTo({ url: "/pages/owner/ownerAndPickup" });
     },
     // 账号与安全
     goSafe() {
-      uni.navigateTo({ url: "/pages/mine/safe" });
+      uni.navigateTo({ url: "/pages/owner/ownerSetting" });
     },
     // 接送记录
     goRecord() {
-      uni.navigateTo({ url: "/pages/mine/record" });
+      uni.navigateTo({ url: "/pages/owner/ownAndRecord" });
     },
     // 退出登录
     handleLogout() {
@@ -134,7 +134,7 @@ export default {
           if (res.confirm) {
             uni.removeStorageSync("token");
             uni.removeStorageSync("userInfo");
-            uni.reLaunch({ url: "/pages/login/parent" });
+            uni.reLaunch({ url: "/pages/login" });
           }
         }
       });

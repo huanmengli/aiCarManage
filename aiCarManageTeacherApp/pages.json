@@ -71,6 +71,12 @@
 			"style": {
 				"navigationBarTitleText": "学生接送人"
 			}
+		},
+		{
+			"path": "pages/owner/ownerSetting",
+			"style": {
+				"navigationBarTitleText": ""
+			}
 		}
 	],
 	"tabBar": {

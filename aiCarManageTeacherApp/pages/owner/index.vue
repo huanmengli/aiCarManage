@@ -5,8 +5,8 @@
       <view class="user-left">
         <image src="/static/teacher.png" class="user-avatar"></image>
         <view class="user-info">
-          <text class="user-name">张老师</text>
-          <text class="user-phone">13800001111</text>
+          <text class="user-name">{{ userInfo.name }}</text>
+          <text class="user-phone">{{ userInfo.phone }}</text>
         </view>
       </view>
       <view class="arrow-right">
@@ -15,18 +15,16 @@
       </view>
     </view>
 
-    <!-- 统计卡片：班级数 + 学生数 -->
+    <!-- 统计卡片：可点击跳转 + 动态数据 -->
     <view class="stat-card">
-      <view class="stat-item">
-        
+      <view class="stat-item" @click="goClass">
+        <text class="stat-num">{{ classCount }}</text>
         <text class="stat-label">管理班级</text>
-		<text class="stat-num">3</text>
       </view>
       <view class="stat-line"></view>
-      <view class="stat-item">
-        
+      <view class="stat-item" @click="goStudent">
+        <text class="stat-num">{{ studentCount }}</text>
         <text class="stat-label">管理学生</text>
-		<text class="stat-num">126</text>
       </view>
     </view>
 
@@ -55,7 +53,7 @@
       </view>
     </view>
 
-    <!-- 退出登录 -->
+    <!-- 底部固定退出登录 -->
     <view class="logout-btn" @click="logout">
       <text>退出登录</text>
     </view>
@@ -65,145 +63,175 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      // 用户信息（可从接口获取）
+      userInfo: {
+        name: "张老师",
+        phone: "13800001111"
+      },
+      // 动态班级数、学生数
+      classCount: 3,
+      studentCount: 126
+    };
+  },
+  onLoad() {
+    // 你可以在这里请求后端接口给 classCount、studentCount 赋值
+    // this.getClassData()
   },
   methods: {
-    // 前往个人信息修改
+    // 去个人信息修改
     goEditUser() {
       uni.navigateTo({
-        url:'/pages/teacher/editUser'
-      })
+        url: "/pages/owner/ownerSetting"
+      });
     },
-    goClass(){
-      uni.navigateTo({url:'/pages/teacher/class'})
+    // 班级管理
+    goClass() {
+      uni.navigateTo({
+        url: "/pages/owner/ownerAndClass"
+      });
     },
-    goNotice(){
-      uni.navigateTo({url:'/pages/teacher/notice'})
+    // 学生管理（新增跳转）
+    goStudent() {
+      uni.navigateTo({
+        url: "/pages/owner/classAndStudent"
+      });
     },
-    goRoad(){
-      uni.navigateTo({url:'/pages/teacher/road'})
+    // 通知管理
+    goNotice() {
+      uni.navigateTo({
+        url: "/pages/owner/ownerAndNotice"
+      });
+    },
+    // 车道管理
+    goRoad() {
+      uni.navigateTo({
+        url: "/pages/owner/ownerAndCar"
+      });
     },
     // 退出登录
-    logout(){
+    logout() {
       uni.showModal({
-        title:'温馨提示',
-        content:'确定要退出当前账号吗？',
-        confirmColor:'#2563eb',
-        success:res=>{
-          if(res.confirm){
-            uni.clearStorageSync()
+        title: "温馨提示",
+        content: "确定要退出当前账号吗？",
+        confirmColor: "#2563eb",
+        success: (res) => {
+          if (res.confirm) {
+            uni.clearStorageSync();
             uni.reLaunch({
-              url:'/pages/login/teacherLogin'
-            })
+              url: "/pages/login"
+            });
           }
         }
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <style scoped>
-.mine-wrap{
+.mine-wrap {
   background-color: #f5f7fa;
   min-height: 100vh;
   padding: 30rpx;
+  padding-bottom: 120rpx;
 }
+
 /* 顶部用户卡片 */
-.user-card{
-  background: linear-gradient(135deg,#2563eb,#4080ff);
+.user-card {
+  background: linear-gradient(135deg, #2563eb, #4080ff);
   border-radius: 24rpx;
   padding: 40rpx 30rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 10rpx 30rpx rgba(37,99,235,0.25);
+  box-shadow: 0 10rpx 30rpx rgba(37, 99, 235, 0.25);
   margin-bottom: 20rpx;
 }
-.user-left{
+.user-left {
   display: flex;
   align-items: center;
 }
-.user-avatar{
+.user-avatar {
   width: 120rpx;
   height: 120rpx;
   border-radius: 50%;
   border: 3rpx solid #ffffff;
 }
-.user-info{
+.user-info {
   margin-left: 25rpx;
 }
-.user-name{
+.user-name {
   font-size: 38rpx;
   color: #fff;
   font-weight: 500;
   display: block;
 }
-.user-phone{
+.user-phone {
   font-size: 26rpx;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   margin-top: 8rpx;
 }
-.arrow-right{
+.arrow-right {
   display: flex;
   align-items: center;
 }
-.edit-txt{
+.edit-txt {
   font-size: 26rpx;
   color: #fff;
   margin-right: 8rpx;
 }
-.right-icon{
+.right-icon {
   width: 16rpx;
   height: 28rpx;
 }
 
-/* 统计卡片：班级 + 学生 */
-.stat-card{
+/* 统计卡片（可点击） */
+.stat-card {
   background: #fff;
   border-radius: 20rpx;
   display: flex;
   padding: 30rpx 0;
   margin-bottom: 30rpx;
-  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.04);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.04);
 }
-.stat-item{
-  flex:1;
+.stat-item {
+  flex: 1;
   text-align: center;
 }
-.stat-num{
+.stat-num {
   font-size: 42rpx;
   font-weight: bold;
   color: #2563eb;
   line-height: 1.2;
 }
-.stat-label{
+.stat-label {
   font-size: 26rpx;
   color: #666;
 }
-.stat-line{
-  width:1rpx;
-  height:50rpx;
-  background:#eee;
+.stat-line {
+  width: 1rpx;
+  height: 50rpx;
+  background: #eee;
   align-self: center;
 }
 
 /* 功能列表 */
-.func-box{
+.func-box {
   background-color: #ffffff;
   border-radius: 20rpx;
   overflow: hidden;
 }
-.func-item{
+.func-item {
   display: flex;
   align-items: center;
   padding: 35rpx 30rpx;
   border-bottom: 1rpx solid #f2f3f5;
 }
-.func-item:last-child{
+.func-item:last-child {
   border-bottom: none;
 }
-.func-icon{
+.func-icon {
   width: 76rpx;
   height: 76rpx;
   border-radius: 18rpx;
@@ -211,26 +239,30 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.bg-blue{ background-color: #e8f1ff; }
-.bg-orange{ background-color: #fff3e8; }
-.bg-green{ background-color: #e8faf0; }
-.icon-img{ width: 40rpx; height: 40rpx; }
-.func-name{
+.bg-blue { background-color: #e8f1ff; }
+.bg-orange { background-color: #fff3e8; }
+.bg-green { background-color: #e8faf0; }
+.icon-img { width: 40rpx; height: 40rpx; }
+.func-name {
   flex: 1;
   font-size: 32rpx;
   color: #333;
   margin-left: 22rpx;
 }
-.item-arrow{ width: 16rpx; height: 28rpx; }
+.item-arrow { width: 16rpx; height: 28rpx; }
 
-/* 退出登录 */
-.logout-btn{
-  margin-top: 80rpx;
+/* 底部固定退出按钮 */
+.logout-btn {
+  position: fixed;
+  bottom: 40rpx;
+  left: 30rpx;
+  right: 30rpx;
   background-color: #fff;
   text-align: center;
   line-height: 90rpx;
   border-radius: 18rpx;
   font-size: 32rpx;
   color: #f53f3f;
+  box-shadow: 0 4rpx 15rpx rgba(245, 63, 63, 0.15);
 }
 </style>

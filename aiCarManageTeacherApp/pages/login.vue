@@ -1,10 +1,6 @@
 <template>
   <view class="login-container">
-    <!-- 返回按钮 -->
-    <view class="back-btn" @click="goBack">
-      <image src="/static/back.png" mode="aspectFit" class="back-icon"></image>
-    </view>
-
+   
     <!-- 标题 -->
     <view class="title-section">
       <text class="main-title">教师登录</text>
