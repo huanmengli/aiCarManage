@@ -1,10 +1,6 @@
 <template>
   <view class="register-container">
-    <!-- 返回按钮 -->
-    <view class="back-btn" @click="goBack">
-      <image src="/static/back.png" mode="aspectFit" class="back-icon"></image>
-    </view>
-
+    
     <!-- 标题 -->
     <view class="title-section">
       <text class="main-title">注册账号</text>
@@ -134,7 +130,7 @@ export default {
 
 <style scoped>
 .register-container {
-  padding: 40rpx 60rpx;
+  padding: 5.33vw 4vw;
   background: #fff;
   min-height: 100vh;
   box-sizing: border-box;
@@ -142,8 +138,8 @@ export default {
 
 /* 返回按钮 */
 .back-btn {
-  width: 60rpx;
-  height: 60rpx;
+  width: 4vw;
+  height: 4vw;
   background: #f5f5f5;
   border-radius: 50%;
   display: flex;
@@ -151,24 +147,24 @@ export default {
   justify-content: center;
 }
 .back-icon {
-  width: 30rpx;
-  height: 30rpx;
+  width: 2vw;
+  height: 2vw;
 }
 
 /* 标题区域 */
 .title-section {
-  margin-top: 60rpx;
-  margin-bottom: 80rpx;
+  margin-top: 8vw;
+  margin-bottom: 10vw;
 }
 .main-title {
-  font-size: 48rpx;
+  font-size: 6.4vw;
   font-weight: bold;
   color: #1a1a1a;
   display: block;
-  margin-bottom: 20rpx;
+  margin-bottom: 2.6vw;
 }
 .sub-title {
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #666;
 }
 
@@ -180,35 +176,35 @@ export default {
   display: flex;
   align-items: center;
   background: #f8f9fa;
-  border-radius: 16rpx;
-  padding: 0 30rpx;
-  height: 100rpx;
-  margin-bottom: 30rpx;
+  border-radius: 2.13vw;
+  padding: 0 4vw;
+  height: 13.33vw;
+  margin-bottom: 4vw;
 }
 .input-field {
   flex: 1;
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
 }
 .input-field::placeholder {
   color: #999;
 }
 .eye-icon {
-  width: 32rpx;
-  height: 32rpx;
+  width: 4.26vw;
+  height: 4.26vw;
 }
 
 /* 注册按钮 */
 .register-btn {
   width: 100%;
-  height: 100rpx;
+  height: 13.33vw;
   background: #2563eb;
   color: #fff;
-  border-radius: 16rpx;
-  font-size: 34rpx;
+  border-radius: 2.13vw;
+  font-size: 4.5vw;
   font-weight: 500;
   border: none;
-  box-shadow: 0 8rpx 20rpx rgba(37, 99, 235, 0.2);
-  margin-top: 20rpx;
+  box-shadow: 0 1.06vw 2.66vw rgba(37, 99, 235, 0.2);
+  margin-top: 2.6vw;
 }
 </style>

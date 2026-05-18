@@ -154,22 +154,22 @@ export default {
   background: #ffffff;
   display: flex;
   align-items: center;
-  padding: 40rpx 30rpx;
+  padding: 5.33vw 4vw;
 }
 .avatar-wrap {
   position: relative;
 }
 .avatar {
-  width: 120rpx;
-  height: 120rpx;
+  width: 16vw;
+  height: 16vw;
   border-radius: 50%;
 }
 .cert-icon {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 40rpx;
-  height: 40rpx;
+  width: 5.33vw;
+  height: 5.33vw;
   background: #2563eb;
   border-radius: 50%;
   display: flex;
@@ -177,66 +177,66 @@ export default {
   justify-content: center;
 }
 .cert-img {
-  width: 24rpx;
-  height: 24rpx;
+  width: 3.2vw;
+  height: 3.2vw;
 }
 .user-info {
   flex: 1;
-  margin-left: 24rpx;
+  margin-left: 3.2vw;
 }
 .user-name {
-  font-size: 36rpx;
+  font-size: 4.8vw;
   font-weight: bold;
   color: #1a1a1a;
 }
 .phone-text {
-  font-size: 28rpx;
+  font-size: 3.73vw;
   color: #666;
-  margin: 8rpx 0;
+  margin: 1.06vw 0;
 }
 .tags-row {
   display: flex;
-  gap: 16rpx;
-  margin-top: 8rpx;
+  gap: 2.13vw;
+  margin-top: 1.06vw;
 }
 .tag {
   background: #e6f0ff;
   color: #2563eb;
-  font-size: 24rpx;
-  padding: 6rpx 16rpx;
-  border-radius: 20rpx;
+  font-size: 3.2vw;
+  padding: 0.8vw 2.13vw;
+  border-radius: 2.66vw;
 }
 .class-tag {
   background: #f0f2f5;
   color: #666;
 }
 .arrow-right {
-  width: 40rpx;
-  height: 40rpx;
+  width: 5.33vw;
+  height: 5.33vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .arrow-icon {
-  width: 20rpx;
-  height: 20rpx;
+  width: 2.66vw;
+  height: 2.66vw;
 }
 
 /* 通用模块 */
 .section-wrap {
-  margin: 24rpx 30rpx 0;
+  margin: 3.2vw 4vw 0;
   background: #fff;
-  border-radius: 20rpx;
+  border-radius: 2.66vw;
   overflow: hidden;
 }
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30rpx;
+  padding: 4vw;
 }
 .section-title {
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #333;
   font-weight: 500;
 }
@@ -245,44 +245,44 @@ export default {
   align-items: center;
 }
 .add-text {
-  font-size: 28rpx;
+  font-size: 3.73vw;
   color: #2563eb;
 }
 .item-card {
   display: flex;
   align-items: center;
-  padding: 0 30rpx 30rpx;
+  padding: 0 4vw 4vw;
 }
 .item-icon-wrap {
-  width: 80rpx;
-  height: 80rpx;
+  width: 10.66vw;
+  height: 10.66vw;
   background: #f0f6ff;
-  border-radius: 16rpx;
+  border-radius: 2.13vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .item-icon {
-  width: 40rpx;
-  height: 40rpx;
+  width: 5.33vw;
+  height: 5.33vw;
 }
 .receiver-avatar {
-  width: 80rpx;
-  height: 80rpx;
+  width: 10.66vw;
+  height: 10.66vw;
   border-radius: 50%;
 }
 .item-content {
   flex: 1;
-  margin-left: 20rpx;
+  margin-left: 2.66vw;
 }
 .item-title {
   display: block;
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #1a1a1a;
-  margin-bottom: 6rpx;
+  margin-bottom: 0.8vw;
 }
 .item-desc {
-  font-size: 26rpx;
+  font-size: 3.46vw;
   color: #666;
 }
 
@@ -290,49 +290,49 @@ export default {
 .func-item {
   display: flex;
   align-items: center;
-  padding: 30rpx;
+  padding: 4vw;
 }
 .border-top {
   border-top: 1rpx solid #f0f2f5;
 }
 .func-icon-wrap {
-  width: 72rpx;
-  height: 72rpx;
+  width: 9.6vw;
+  height: 9.6vw;
   background: #f0f6ff;
-  border-radius: 16rpx;
+  border-radius: 2.13vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .func-icon {
-  width: 36rpx;
-  height: 36rpx;
+  width: 4.8vw;
+  height: 4.8vw;
 }
 .func-title {
   flex: 1;
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #1a1a1a;
-  margin-left: 20rpx;
+  margin-left: 2.66vw;
 }
 
 /* 退出登录 */
 .logout-btn {
-  margin: 60rpx 30rpx;
+  margin: 8vw 4vw;
   background: #fff;
   border: 1rpx solid #ff4d4f;
-  border-radius: 20rpx;
+  border-radius: 2.66vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28rpx 0;
+  padding: 3.73vw 0;
 }
 .logout-icon {
-  width: 32rpx;
-  height: 32rpx;
-  margin-right: 12rpx;
+  width: 4.26vw;
+  height: 4.26vw;
+  margin-right: 1.6vw;
 }
 .logout-text {
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #ff4d4f;
 }
 </style>

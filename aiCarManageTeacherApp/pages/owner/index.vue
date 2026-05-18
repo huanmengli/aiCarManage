@@ -133,85 +133,85 @@ export default {
 .mine-wrap {
   background-color: #f5f7fa;
   min-height: 100vh;
-  padding: 30rpx;
-  padding-bottom: 120rpx;
+  padding: 4vw;
+  padding-bottom: 16vw;
 }
 
 /* 顶部用户卡片 */
 .user-card {
   background: linear-gradient(135deg, #2563eb, #4080ff);
-  border-radius: 24rpx;
-  padding: 40rpx 30rpx;
+  border-radius: 3.2vw;
+  padding: 5.33vw 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 10rpx 30rpx rgba(37, 99, 235, 0.25);
-  margin-bottom: 20rpx;
+  box-shadow: 0 1.33vw 4vw rgba(37, 99, 235, 0.25);
+  margin-bottom: 2.66vw;
 }
 .user-left {
   display: flex;
   align-items: center;
 }
 .user-avatar {
-  width: 120rpx;
-  height: 120rpx;
+  width: 16vw;
+  height: 16vw;
   border-radius: 50%;
-  border: 3rpx solid #ffffff;
+  border: 0.4vw solid #ffffff;
 }
 .user-info {
-  margin-left: 25rpx;
+  margin-left: 3.33vw;
 }
 .user-name {
-  font-size: 38rpx;
+  font-size: 5.06vw;
   color: #fff;
   font-weight: 500;
   display: block;
 }
 .user-phone {
-  font-size: 26rpx;
+  font-size: 3.46vw;
   color: rgba(255, 255, 255, 0.85);
-  margin-top: 8rpx;
+  margin-top: 1.06vw;
 }
 .arrow-right {
   display: flex;
   align-items: center;
 }
 .edit-txt {
-  font-size: 26rpx;
+  font-size: 3.46vw;
   color: #fff;
-  margin-right: 8rpx;
+  margin-right: 1.06vw;
 }
 .right-icon {
-  width: 16rpx;
-  height: 28rpx;
+  width: 2.13vw;
+  height: 3.73vw;
 }
 
 /* 统计卡片（可点击） */
 .stat-card {
   background: #fff;
-  border-radius: 20rpx;
+  border-radius: 2.66vw;
   display: flex;
-  padding: 30rpx 0;
-  margin-bottom: 30rpx;
-  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.04);
+  padding: 4vw 0;
+  margin-bottom: 4vw;
+  box-shadow: 0 0.53vw 1.6vw rgba(0, 0, 0, 0.04);
 }
 .stat-item {
   flex: 1;
   text-align: center;
 }
 .stat-num {
-  font-size: 42rpx;
+  font-size: 5.6vw;
   font-weight: bold;
   color: #2563eb;
   line-height: 1.2;
 }
 .stat-label {
-  font-size: 26rpx;
+  font-size: 3.46vw;
   color: #666;
 }
 .stat-line {
-  width: 1rpx;
-  height: 50rpx;
+  width: 0.13vw;
+  height: 6.66vw;
   background: #eee;
   align-self: center;
 }
@@ -219,22 +219,22 @@ export default {
 /* 功能列表 */
 .func-box {
   background-color: #ffffff;
-  border-radius: 20rpx;
+  border-radius: 2.66vw;
   overflow: hidden;
 }
 .func-item {
   display: flex;
   align-items: center;
-  padding: 35rpx 30rpx;
-  border-bottom: 1rpx solid #f2f3f5;
+  padding: 4.66vw 4vw;
+  border-bottom: 0.13vw solid #f2f3f5;
 }
 .func-item:last-child {
   border-bottom: none;
 }
 .func-icon {
-  width: 76rpx;
-  height: 76rpx;
-  border-radius: 18rpx;
+  width: 10.13vw;
+  height: 10.13vw;
+  border-radius: 2.4vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,27 +242,27 @@ export default {
 .bg-blue { background-color: #e8f1ff; }
 .bg-orange { background-color: #fff3e8; }
 .bg-green { background-color: #e8faf0; }
-.icon-img { width: 40rpx; height: 40rpx; }
+.icon-img { width: 5.33vw; height: 5.33vw; }
 .func-name {
   flex: 1;
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #333;
-  margin-left: 22rpx;
+  margin-left: 2.93vw;
 }
-.item-arrow { width: 16rpx; height: 28rpx; }
+.item-arrow { width: 2.13vw; height: 3.73vw; }
 
 /* 底部固定退出按钮 */
 .logout-btn {
   position: fixed;
-  bottom: 40rpx;
-  left: 30rpx;
-  right: 30rpx;
+  bottom: 5.33vw;
+  left: 4vw;
+  right: 4vw;
   background-color: #fff;
   text-align: center;
-  line-height: 90rpx;
-  border-radius: 18rpx;
-  font-size: 32rpx;
+  line-height: 12vw;
+  border-radius: 2.4vw;
+  font-size: 4.26vw;
   color: #f53f3f;
-  box-shadow: 0 4rpx 15rpx rgba(245, 63, 63, 0.15);
+  box-shadow: 0 0.53vw 2vw rgba(245, 63, 63, 0.15);
 }
 </style>

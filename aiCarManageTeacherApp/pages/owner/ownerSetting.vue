@@ -67,40 +67,40 @@ export default {
 .edit-user {
   background: #f5f7fa;
   min-height: 100vh;
-  padding: 30rpx;
+  padding: 4vw;
 }
 .edit-item {
   background: #fff;
-  border-radius: 16rpx;
-  padding: 0 25rpx;
-  margin-bottom: 20rpx;
+  border-radius: 2.13vw;
+  padding: 0 3.33vw;
+  margin-bottom: 2.66vw;
   display: flex;
   align-items: center;
-  height: 95rpx;
+  height: 12.66vw;
 }
 .label {
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
-  width: 120rpx;
+  width: 16vw;
 }
 .inp {
   flex: 1;
-  font-size: 30rpx;
+  font-size: 4vw;
 }
 .picker-text {
   flex: 1;
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
   text-align: right;
 }
 .save-btn {
   background: linear-gradient(90deg, #2563eb, #4080ff);
-  border-radius: 16rpx;
+  border-radius: 2.13vw;
   text-align: center;
-  line-height: 90rpx;
+  line-height: 12vw;
   color: #fff;
-  font-size: 33rpx;
-  margin-top: 50rpx;
-  box-shadow: 0 6rpx 20rpx rgba(37, 99, 235, 0.2);
+  font-size: 4.4vw;
+  margin-top: 6.66vw;
+  box-shadow: 0 0.8vw 2.66vw rgba(37, 99, 235, 0.2);
 }
 </style>

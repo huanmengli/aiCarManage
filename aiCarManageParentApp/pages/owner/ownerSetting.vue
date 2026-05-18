@@ -90,51 +90,51 @@ export default {
       }, 1200)
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .safe-container {
   background-color: #f5f7fa;
   min-height: 100vh;
-  padding: 30rpx;
+  padding: 4vw;
 }
 .edit-item {
   display: flex;
   align-items: center;
   background: #fff;
-  padding: 0 30rpx;
-  height: 90rpx;
-  border-radius: 16rpx;
-  margin-bottom: 20rpx;
+  padding: 0 4vw;
+  height: 12vw;
+  border-radius: 2.13vw;
+  margin-bottom: 2.66vw;
 }
 .label {
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
-  width: 160rpx;
+  width: 21.33vw;
 }
 .inp {
   flex: 1;
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #111;
 }
 .pwd-box {
-  margin-top: 30rpx;
+  margin-top: 4vw;
 }
 .title {
-  font-size: 32rpx;
+  font-size: 4.26vw;
   color: #333;
-  margin-bottom: 20rpx;
-  padding-left: 10rpx;
+  margin-bottom: 2.66vw;
+  padding-left: 1.33vw;
 }
 .save-btn {
-  margin-top: 60rpx;
-  height: 90rpx;
-  line-height: 90rpx;
+  margin-top: 8vw;
+  height: 12vw;
+  line-height: 12vw;
   text-align: center;
   background: #2563eb;
   color: #fff;
-  border-radius: 16rpx;
-  font-size: 32rpx;
+  border-radius: 2.13vw;
+  font-size: 4.26vw;
 }
 </style>

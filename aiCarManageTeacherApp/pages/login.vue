@@ -67,36 +67,6 @@ export default {
     // 教师登录
     handleLogin() {
 		uni.switchTab({ url: "/pages/owner/index" });
-      // const { phone, password } = this.formData;
-      // if (!phone || phone.length !== 11) {
-      //   uni.showToast({ title: "请输入正确手机号", icon: "none" });
-      //   return;
-      // }
-      // if (!password) {
-      //   uni.showToast({ title: "请输入密码", icon: "none" });
-      //   return;
-      // }
-
-      // uni.showLoading({ title: "登录中..." });
-      // uni.request({
-      //   url: "你的教师登录接口地址",
-      //   method: "POST",
-      //   data: { phone, password },
-      //   success: (res) => {
-      //     uni.hideLoading();
-      //     if (res.data.code === 200) {
-      //       uni.showToast({ title: "登录成功" });
-      //       uni.setStorageSync("teacherToken", res.data.data.token);
-      //       uni.switchTab({ url: "/pages/teacher/index" });
-      //     } else {
-      //       uni.showToast({ title: res.data.msg || "登录失败", icon: "none" });
-      //     }
-      //   },
-      //   fail: () => {
-      //     uni.hideLoading();
-      //     uni.showToast({ title: "网络异常", icon: "none" });
-      //   }
-      // });
     }
   }
 };
@@ -104,15 +74,15 @@ export default {
 
 <style scoped>
 .login-container {
-  padding: 40rpx 60rpx;
+  padding: 5.33vw 4vw;
   background: #fff;
   min-height: 100vh;
   box-sizing: border-box;
 }
 
 .back-btn {
-  width: 60rpx;
-  height: 60rpx;
+  width: 4vw;
+  height: 4vw;
   background: #f5f5f5;
   border-radius: 50%;
   display: flex;
@@ -120,23 +90,23 @@ export default {
   justify-content: center;
 }
 .back-icon {
-  width: 30rpx;
-  height: 30rpx;
+  width: 2vw;
+  height: 2vw;
 }
 
 .title-section {
-  margin-top: 60rpx;
-  margin-bottom: 80rpx;
+  margin-top: 8vw;
+  margin-bottom: 10vw;
 }
 .main-title {
-  font-size: 48rpx;
+  font-size: 6.4vw;
   font-weight: bold;
   color: #1a1a1a;
   display: block;
-  margin-bottom: 20rpx;
+  margin-bottom: 2.6vw;
 }
 .sub-title {
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #666;
 }
 
@@ -147,39 +117,39 @@ export default {
   display: flex;
   align-items: center;
   background: #f8f9fa;
-  border-radius: 16rpx;
-  padding: 0 30rpx;
-  height: 100rpx;
-  margin-bottom: 30rpx;
+  border-radius: 2.13vw;
+  padding: 0 4vw;
+  height: 13.33vw;
+  margin-bottom: 4vw;
 }
 .input-icon {
-  width: 32rpx;
-  height: 32rpx;
-  margin-right: 20rpx;
+  width: 4.26vw;
+  height: 4.26vw;
+  margin-right: 2.6vw;
 }
 .input-field {
   flex: 1;
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
 }
 .input-field::placeholder {
   color: #999;
 }
 .eye-icon {
-  width: 32rpx;
-  height: 32rpx;
+  width: 4.26vw;
+  height: 4.26vw;
 }
 
 .login-btn {
   width: 100%;
-  height: 100rpx;
+  height: 13.33vw;
   background: #2563eb;
   color: #fff;
-  border-radius: 16rpx;
-  font-size: 34rpx;
+  border-radius: 2.13vw;
+  font-size: 4.5vw;
   font-weight: 500;
   border: none;
-  box-shadow: 0 8rpx 20rpx rgba(37, 99, 235, 0.2);
-  margin: 40rpx 0 60rpx;
+  box-shadow: 0 1.06vw 2.66vw rgba(37, 99, 235, 0.2);
+  margin: 5.33vw 0 8vw;
 }
 </style>
