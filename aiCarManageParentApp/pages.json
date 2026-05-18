@@ -35,7 +35,8 @@
 		{
 			"path": "pages/map/index",
 			"style": {
-				"navigationBarTitleText": "导航"
+				"navigationBarTitleText": "导航",
+				"navigationStyle": "default"
 			}
 		},
 		{
