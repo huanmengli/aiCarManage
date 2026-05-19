@@ -1,32 +1,32 @@
 <style scoped>
 .container {
-  padding: 16rpx;
+  padding: 2vw;
   background-color: #f5f7fa;
   min-height: 100vh;
 }
 .notice-card {
   background-color: #fff;
-  border-radius: 12rpx;
-  padding: 24rpx;
-  margin-bottom: 16rpx;
-  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  border-radius: 2vw;
+  padding: 3vw;
+  margin-bottom: 2vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.05);
 }
 .notice-title {
-  font-size: 32rpx;
+  font-size: 4vw;
   font-weight: bold;
   color: #333;
-  margin-bottom: 12rpx;
+  margin-bottom: 2vw;
 }
 .notice-desc {
-  font-size: 28rpx;
+  font-size: 4vw;
   color: #666;
   line-height: 1.5;
-  margin-bottom: 16rpx;
+  margin-bottom: 2vw;
 }
 .notice-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 24rpx;
+  font-size: 3vw;
   color: #999;
 }
 .notice-tag {
