@@ -1,0 +1,28 @@
+
+.container.data-v-78b7d868 {
+  padding: 16rpx;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+.detail-card.data-v-78b7d868 {
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 32rpx;
+}
+.detail-title.data-v-78b7d868 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24rpx;
+}
+.detail-meta.data-v-78b7d868 {
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 32rpx;
+}
+.detail-content.data-v-78b7d868 {
+  font-size: 30rpx;
+  color: #333;
+  line-height: 1.8;
+}
+

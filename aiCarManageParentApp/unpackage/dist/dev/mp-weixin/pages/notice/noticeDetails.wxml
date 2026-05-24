@@ -1,0 +1,1 @@
+<view class="container data-v-78b7d868"><view class="detail-card data-v-78b7d868"><view class="detail-title data-v-78b7d868">{{detail.title}}</view><view class="detail-meta data-v-78b7d868">{{"发布时间："+detail.time+"    类型："+detail.type}}</view><view class="detail-content data-v-78b7d868">{{detail.content}}</view></view></view>
