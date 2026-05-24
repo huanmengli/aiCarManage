@@ -49,5 +49,46 @@ export default {
       }
     };
   }
+	created() {
+		const id = this.getUserId();
+		this.loadAllDate(id);
+	}
+
+	methods:{
+		async loadNotice(userId){
+						try {
+							uni.showLoading({
+								"加载中......"
+							});
+							await Promise.all([
+								  this.loadNoticeData(),
+							]);
+							uni.hideLoading();
+						}catch (error){
+							console.error('数据加载失败:', error);
+							uni.hideLoading();
+							uni.showToast({ title: '数据加载失败，请重试', icon: 'none', duration: 1500 });
+							this.setDefaultData(); // 降级显示默认数据
+						}finally {
+				      userId && userId();
+				    }
+					},
+					async loadNoticeData(userId){
+						try {
+						        uni.showLoading({ title: '加载中...' })
+						        const res = await getParentNoticeList(this.parentId)
+						        if (res.code === 200 && res.data) {
+						          this.noticeList = res.data.map(item => ({
+						            ...item,
+						            typeText: this.getTypeText(item.type)
+						          }))
+						        }
+						      } catch (error) {
+						        console.error('加载通知列表失败:', error)
+						      } finally {
+						        uni.hideLoading()
+						      }
+					},
+	}
 };
 </script>

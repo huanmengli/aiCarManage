@@ -36,6 +36,7 @@
 .input-box {
   width: 100%;
   border: 1px solid #eee;
+	height: 16vw;
   border-radius: 1vw;
   padding: 3vw;
   font-size: 4vw;
@@ -98,18 +99,95 @@
 </template>
 
 <script>
+import { publishNotice } from '@/api/notice.js'
+
 export default {
   data() {
-    return {
-      activeTab: 'grade',
-      placeholder: {
-        title: '请输入通知标题',
-        content: '请输入通知详细内容'
-      },
-      gradeList: ['高一', '高二', '高三'],
-      classList: ['高一(1)班', '高一(2)班', '高二(1)班', '高二(2)班', '高三(1)班'],
-      targetList: ['高一', '高二']
-    };
+      return {
+        activeTab: 'grade',
+        placeholder: {
+          title: '请输入通知标题',
+          content: '请输入通知详细内容'
+        },
+        gradeList: ['高一', '高二', '高三'],
+        classList: ['高一(1)班', '高一(2)班', '高二(1)班', '高二(2)班', '高三(1)班'],
+        targetList: ['高一', '高二']
+      };
+    },
+  created() {
+    // 可以在这里加载年级、班级列表
+  },
+  methods: {
+    // 切换通知类型（按年级/按班级）
+    switchTab(tab) {
+      this.activeTab = tab
+      if (tab === 'grade') {
+        this.noticeForm.type = 2
+        this.noticeForm.noticeClassid = null
+      } else {
+        this.noticeForm.type = 3
+        this.noticeForm.noticeGradeid = null
+      }
+    },
+
+    // 选择年级
+    selectGrade(gradeId) {
+      this.noticeForm.noticeGradeid = gradeId
+      // 可以在这里根据年级加载班级列表
+      // this.loadClassList(gradeId)
+    },
+
+    // 发布通知
+    async handlePublish() {
+      // 1. 表单校验（企业级开发必须做）
+      if (!this.noticeForm.noticeTitle.trim()) {
+        return uni.showToast({ title: '请输入通知标题', icon: 'none' })
+      }
+      if (!this.noticeForm.noticeContent.trim()) {
+        return uni.showToast({ title: '请输入通知内容', icon: 'none' })
+      }
+      if (this.activeTab === 'grade' && !this.noticeForm.noticeGradeid) {
+        return uni.showToast({ title: '请选择接收年级', icon: 'none' })
+      }
+      if (this.activeTab === 'class' && !this.noticeForm.noticeClassid) {
+        return uni.showToast({ title: '请选择接收班级', icon: 'none' })
+      }
+
+      try {
+        uni.showLoading({ title: '发布中...' })
+        // 2. 调用接口
+        const res = await publishNotice({
+          ...this.noticeForm,
+          noticeTeacherId: this.getTeacherId() // 从本地缓存获取当前老师ID
+        })
+
+        if (res.code === 200) {
+          uni.showToast({ title: '发布成功' })
+          // 3. 发布成功后清空表单，返回上一页
+          this.noticeForm = {
+            noticeTitle: '',
+            noticeContent: '',
+            noticeGradeid: null,
+            noticeClassid: null,
+            type: 2
+          }
+          setTimeout(() => {
+						uni.navigateBack()
+          }, 1500)
+        } else {
+          uni.showToast({ title: res.message || '发布失败', icon: 'none' })
+        }
+      } catch (error) {
+        console.error('发布通知失败:', error)
+      } finally {
+        uni.hideLoading()
+      }
+    },
+
+    // 获取当前老师ID（和你之前的getUserId同理）
+    getTeacherId() {
+      return uni.getStorageSync('teacherId') || '1'
+    }
   }
-};
+}
 </script>
