@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/owner/studentAndPick",
-    "pages/home/index",
     "pages/login",
+    "pages/owner/studentAndPick",
     "pages/home/homeAndNotice",
+    "pages/home/index",
     "pages/register",
     "pages/dataStats/index",
     "pages/notice/index",

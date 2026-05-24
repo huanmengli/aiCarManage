@@ -1,0 +1,35 @@
+
+.container.data-v-ce639b58 {
+  padding: 16rpx;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+.notice-card.data-v-ce639b58 {
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+.notice-title.data-v-ce639b58 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12rpx;
+}
+.notice-desc.data-v-ce639b58 {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 16rpx;
+}
+.notice-meta.data-v-ce639b58 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #999;
+}
+.notice-tag.data-v-ce639b58 {
+  color: #1677ff;
+}
+

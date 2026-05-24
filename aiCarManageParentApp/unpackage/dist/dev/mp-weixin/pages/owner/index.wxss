@@ -1,0 +1,193 @@
+
+.mine-container.data-v-97c2b8e6 {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* 用户信息卡片 */
+.user-card.data-v-97c2b8e6 {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 5.33vw 4vw;
+}
+.avatar-wrap.data-v-97c2b8e6 {
+  position: relative;
+}
+.avatar.data-v-97c2b8e6 {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+}
+.cert-icon.data-v-97c2b8e6 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5.33vw;
+  height: 5.33vw;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-img.data-v-97c2b8e6 {
+  width: 3.2vw;
+  height: 3.2vw;
+}
+.user-info.data-v-97c2b8e6 {
+  flex: 1;
+  margin-left: 3.2vw;
+}
+.user-name.data-v-97c2b8e6 {
+  font-size: 4.8vw;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+.phone-text.data-v-97c2b8e6 {
+  font-size: 3.73vw;
+  color: #666;
+  margin: 1.06vw 0;
+}
+.tags-row.data-v-97c2b8e6 {
+  display: flex;
+  gap: 2.13vw;
+  margin-top: 1.06vw;
+}
+.tag.data-v-97c2b8e6 {
+  background: #e6f0ff;
+  color: #2563eb;
+  font-size: 3.2vw;
+  padding: 0.8vw 2.13vw;
+  border-radius: 2.66vw;
+}
+.class-tag.data-v-97c2b8e6 {
+  background: #f0f2f5;
+  color: #666;
+}
+.arrow-right.data-v-97c2b8e6 {
+  width: 5.33vw;
+  height: 5.33vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-icon.data-v-97c2b8e6 {
+  width: 2.66vw;
+  height: 2.66vw;
+}
+
+/* 通用模块 */
+.section-wrap.data-v-97c2b8e6 {
+  margin: 3.2vw 4vw 0;
+  background: #fff;
+  border-radius: 2.66vw;
+  overflow: hidden;
+}
+.section-header.data-v-97c2b8e6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw;
+}
+.section-title.data-v-97c2b8e6 {
+  font-size: 4.26vw;
+  color: #333;
+  font-weight: 500;
+}
+.add-btn.data-v-97c2b8e6 {
+  display: flex;
+  align-items: center;
+}
+.add-text.data-v-97c2b8e6 {
+  font-size: 3.73vw;
+  color: #2563eb;
+}
+.item-card.data-v-97c2b8e6 {
+  display: flex;
+  align-items: center;
+  padding: 0 4vw 4vw;
+}
+.item-icon-wrap.data-v-97c2b8e6 {
+  width: 10.66vw;
+  height: 10.66vw;
+  background: #f0f6ff;
+  border-radius: 2.13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-icon.data-v-97c2b8e6 {
+  width: 5.33vw;
+  height: 5.33vw;
+}
+.receiver-avatar.data-v-97c2b8e6 {
+  width: 10.66vw;
+  height: 10.66vw;
+  border-radius: 50%;
+}
+.item-content.data-v-97c2b8e6 {
+  flex: 1;
+  margin-left: 2.66vw;
+}
+.item-title.data-v-97c2b8e6 {
+  display: block;
+  font-size: 4.26vw;
+  color: #1a1a1a;
+  margin-bottom: 0.8vw;
+}
+.item-desc.data-v-97c2b8e6 {
+  font-size: 3.46vw;
+  color: #666;
+}
+
+/* 功能列表 */
+.func-item.data-v-97c2b8e6 {
+  display: flex;
+  align-items: center;
+  padding: 4vw;
+}
+.border-top.data-v-97c2b8e6 {
+  border-top: 1rpx solid #f0f2f5;
+}
+.func-icon-wrap.data-v-97c2b8e6 {
+  width: 9.6vw;
+  height: 9.6vw;
+  background: #f0f6ff;
+  border-radius: 2.13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.func-icon.data-v-97c2b8e6 {
+  width: 4.8vw;
+  height: 4.8vw;
+}
+.func-title.data-v-97c2b8e6 {
+  flex: 1;
+  font-size: 4.26vw;
+  color: #1a1a1a;
+  margin-left: 2.66vw;
+}
+
+/* 退出登录 */
+.logout-btn.data-v-97c2b8e6 {
+  margin: 8vw 4vw;
+  background: #fff;
+  border: 1rpx solid #ff4d4f;
+  border-radius: 2.66vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.73vw 0;
+}
+.logout-icon.data-v-97c2b8e6 {
+  width: 4.26vw;
+  height: 4.26vw;
+  margin-right: 1.6vw;
+}
+.logout-text.data-v-97c2b8e6 {
+  font-size: 4.26vw;
+  color: #ff4d4f;
+}
+

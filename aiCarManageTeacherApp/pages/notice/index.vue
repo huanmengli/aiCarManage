@@ -1,8 +1,8 @@
-<style scoped>
+<style scoped></style>
 .container {
   padding: 16rpx;
   background-color: #f5f7fa;
-  min-height: 100vh;
+  min-height: 100vh;  
 }
 .tab-bar {
   display: flex;

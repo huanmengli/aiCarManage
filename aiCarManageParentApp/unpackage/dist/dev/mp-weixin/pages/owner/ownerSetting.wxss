@@ -1,0 +1,45 @@
+
+.safe-container.data-v-05489c9c {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 4vw;
+}
+.edit-item.data-v-05489c9c {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0 4vw;
+  height: 12vw;
+  border-radius: 2.13vw;
+  margin-bottom: 2.66vw;
+}
+.label.data-v-05489c9c {
+  font-size: 4vw;
+  color: #333;
+  width: 21.33vw;
+}
+.inp.data-v-05489c9c {
+  flex: 1;
+  font-size: 4vw;
+  color: #111;
+}
+.pwd-box.data-v-05489c9c {
+  margin-top: 4vw;
+}
+.title.data-v-05489c9c {
+  font-size: 4.26vw;
+  color: #333;
+  margin-bottom: 2.66vw;
+  padding-left: 1.33vw;
+}
+.save-btn.data-v-05489c9c {
+  margin-top: 8vw;
+  height: 12vw;
+  line-height: 12vw;
+  text-align: center;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 2.13vw;
+  font-size: 4.26vw;
+}
+

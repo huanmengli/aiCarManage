@@ -1,1 +1,1 @@
-<view class="_div"></view>
+<view class="container data-v-ce639b58"><block wx:for="{{noticeList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['turn']]]]}}" class="notice-card data-v-ce639b58" bindtap="__e"><view class="notice-title data-v-ce639b58">{{item.title}}</view><view class="notice-desc data-v-ce639b58">{{item.desc}}</view><view class="notice-meta data-v-ce639b58"><text class="data-v-ce639b58">{{item.time}}</text><text class="notice-tag data-v-ce639b58">{{item.type}}</text></view></view></block></view>

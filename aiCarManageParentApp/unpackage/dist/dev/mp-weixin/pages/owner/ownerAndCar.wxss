@@ -1,0 +1,319 @@
+
+page {
+  background-color: #f5f7fa;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 顶部导航栏 */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 32rpx;
+  background: #fff;
+}
+.nav-back {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-back .icon {
+  font-size: 36rpx;
+  color: #1f2937;
+}
+.nav-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.nav-placeholder {
+  width: 60rpx;
+}
+
+/* 车辆统计 */
+.vehicle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32rpx;
+  margin: 24rpx 32rpx 0;
+  background: #fff;
+  border-radius: 24rpx;
+}
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+.vehicle-count {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.vehicle-limit {
+  font-size: 24rpx;
+  color: #9ca3af;
+}
+.header-icon {
+  width: 80rpx;
+  height: 80rpx;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-icon .icon-car {
+  font-size: 40rpx;
+}
+
+/* 车辆列表 */
+.vehicle-list {
+  flex: 1;
+  padding: 24rpx 32rpx;
+  overflow-y: auto;
+}
+.vehicle-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
+}
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+}
+.car-icon-wrapper {
+  width: 88rpx;
+  height: 88rpx;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.car-icon {
+  font-size: 44rpx;
+}
+.car-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+.plate-row {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+.plate-number {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.default-tag {
+  font-size: 22rpx;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 4rpx 16rpx;
+  border-radius: 12rpx;
+}
+.car-detail {
+  font-size: 26rpx;
+  color: #6b7280;
+}
+.card-right {
+  display: flex;
+  gap: 24rpx;
+}
+.btn-edit,
+.btn-delete {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.btn-edit {
+  background: #eff6ff;
+}
+.btn-edit .icon {
+  font-size: 28rpx;
+}
+.btn-delete {
+  background: #fef2f2;
+}
+.btn-delete .icon {
+  font-size: 28rpx;
+}
+
+/* 添加按钮 */
+.add-btn-wrapper {
+  padding: 24rpx 32rpx;
+  padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
+  background: #fff;
+}
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+  background: #2563eb;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 28rpx 0;
+  border-radius: 48rpx;
+}
+.add-btn .icon {
+  font-size: 32rpx;
+}
+
+/* 弹窗遮罩 */
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* 弹窗内容 */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 48rpx 48rpx 0 0;
+  padding: 40rpx 32rpx;
+  padding-bottom: calc(40rpx + env(safe-area-inset-bottom));
+  z-index: 999;
+  -webkit-animation: slideUp 0.3s ease;
+          animation: slideUp 0.3s ease;
+}
+@-webkit-keyframes slideUp {
+from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes slideUp {
+from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.modal-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.modal-close {
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 32rpx;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32rpx;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+.form-label {
+  font-size: 28rpx;
+  color: #6b7280;
+}
+.form-input {
+  background: #f5f7fa;
+  border-radius: 16rpx;
+  padding: 24rpx 32rpx;
+  font-size: 30rpx;
+  color: #1f2937;
+}
+.color-list {
+  display: flex;
+  gap: 24rpx;
+}
+.color-item {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rpx;
+  border: 4rpx solid transparent;
+}
+.color-item.active {
+  border-color: #2563eb;
+}
+.color-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2rpx solid #e5e7eb;
+}
+.switch-item {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-footer {
+  display: flex;
+  gap: 24rpx;
+  margin-top: 48rpx;
+}
+.btn-cancel,
+.btn-confirm {
+  flex: 1;
+  text-align: center;
+  padding: 28rpx 0;
+  border-radius: 48rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.btn-cancel {
+  background: #f5f7fa;
+  color: #6b7280;
+}
+.btn-confirm {
+  background: #2563eb;
+  color: #fff;
+}
+

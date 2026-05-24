@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/login",
     "pages/home/index",
     "pages/owner/ownerAndPickup",
     "pages/owner/ownAndRecord",
-    "pages/login",
     "pages/register",
     "pages/map/index",
     "pages/notice/index",
+    "pages/notice/noticeDetails",
     "pages/owner/index",
     "pages/owner/ownerAndCar",
     "pages/owner/ownerSetting"
@@ -46,5 +47,6 @@
       }
     ]
   },
+  "permission": {},
   "usingComponents": {}
 }

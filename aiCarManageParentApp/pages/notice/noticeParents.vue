@@ -36,7 +36,7 @@
 
 <template>
   <view class="container">
-    <view class="notice-card" v-for="(item, index) in noticeList" :key="index" @click="navigateTo(`/pages/notice/detail?id=${index}`)">
+    <view class="notice-card" v-for="(item, index) in noticeList" :key="index" @click="turn()">
       <view class="notice-title">{{ item.title }}</view>
       <view class="notice-desc">{{ item.desc }}</view>
       <view class="notice-meta">
@@ -72,6 +72,13 @@ export default {
         }
       ]
     };
+  },
+  methods:{
+	  turn(){
+		  uni.navigateTo({
+		  	url:"/pages/notice/noticeDetails"
+		  })
+	  }
   }
 };
 </script>
