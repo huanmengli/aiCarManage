@@ -1,27 +1,27 @@
 <style scoped>
 .container {
-  padding: 16rpx;
+  padding: 2vw;
   background-color: #f5f7fa;
   min-height: 100vh;
 }
 .detail-card {
   background-color: #fff;
-  border-radius: 12rpx;
-  padding: 32rpx;
+  border-radius: 2vw;
+  padding: 4vw;
 }
 .detail-title {
-  font-size: 36rpx;
+  font-size: 5vw;
   font-weight: bold;
   color: #333;
-  margin-bottom: 24rpx;
+  margin-bottom: 3vw;
 }
 .detail-meta {
-  font-size: 26rpx;
+  font-size: 3vw;
   color: #999;
-  margin-bottom: 32rpx;
+  margin-bottom: 4vw;
 }
 .detail-content {
-  font-size: 30rpx;
+  font-size: 4vw;
   color: #333;
   line-height: 1.8;
 }
@@ -49,5 +49,46 @@ export default {
       }
     };
   }
+	created() {
+		const id = this.getUserId();
+		this.loadAllDate(id);
+	}
+
+	methods:{
+		async loadNotice(userId){
+						try {
+							uni.showLoading({
+								"加载中......"
+							});
+							await Promise.all([
+								  this.loadNoticeData(),
+							]);
+							uni.hideLoading();
+						}catch (error){
+							console.error('数据加载失败:', error);
+							uni.hideLoading();
+							uni.showToast({ title: '数据加载失败，请重试', icon: 'none', duration: 1500 });
+							this.setDefaultData(); // 降级显示默认数据
+						}finally {
+				      userId && userId();
+				    }
+					},
+					async loadNoticeData(userId){
+						try {
+						        uni.showLoading({ title: '加载中...' })
+						        const res = await getParentNoticeList(this.parentId)
+						        if (res.code === 200 && res.data) {
+						          this.noticeList = res.data.map(item => ({
+						            ...item,
+						            typeText: this.getTypeText(item.type)
+						          }))
+						        }
+						      } catch (error) {
+						        console.error('加载通知列表失败:', error)
+						      } finally {
+						        uni.hideLoading()
+						      }
+					},
+	}
 };
 </script>
